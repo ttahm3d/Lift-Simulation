@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css//main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lift Simulator</title>
+  </head>
+  <body>
+    <section class="lift__inputs-container">
+      <h1>Lift Simulator</h1>
+      <form class="form">
+        <div class="form__item">
+          <label for="number-of-floors" class="form__label">Floors</label>
+          <input
+            type="number"
+            name="floors"
+            min="2"
+            id="number-of-floors"
+            class="form__input"
+          />
+        </div>
+        <div class="form__item">
+          <label for="number-of-floors" class="form__label">Lifts</label>
+          <input
+            type="number"
+            min="1"
+            name="lifts"
+            id="number-of-lifts"
+            class="form__input"
+          />
+        </div>
+        <div class="form__item">
+          <button type="submit" class="form__submit-button submitBtn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+    <section class="simulation">
+      <div class="simulation__floor">
+        <div class="simulation__buttons-container">
+          <button class="simulation__button simulation__buttons--up">Up</button>
+          <button class="simulation__button simulation__buttons--down">
+            Down
+          </button>
+        </div>
+      </div>
+      <div class="simulation__floor">
+        <div class="simulation__buttons-container">
+          <button class="simulation__button simulation__buttons--up">Up</button>
+          <button class="simulation__button simulation__buttons--down">
+            Down
+          </button>
+        </div>
+        <div class="simulation__lifts-container">
+          <div class="simulation__lift">
+            <div
+              class="simulation__lift-door simulation__lift--left-door"
+            ></div>
+            <div
+              class="simulation__lift-door simulation__lift--right-door"
+            ></div>
+          </div>
+          <div class="simulation__lift">
+            <div
+              class="simulation__lift-door simulation__lift--left-door"
+            ></div>
+            <div
+              class="simulation__lift-door simulation__lift--right-door"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
